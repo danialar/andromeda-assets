@@ -1,0 +1,8 @@
+METARIN pack asset notes (metarin-sp)
+=====================================
+pack-1.webp  = single bottle solo front (metarin-bottle-solo-front.png)
+pack-2.webp  = box + bottle black (metarin-box-bottle-black.png) — best 2-unit look
+pack-3.webp  = bottle + white box (metarin-bottle-box-white.png) — NO dedicated 3-pack photo; use as multi-unit / offer tier visual
+pack-7.webp  = bottles-7 lifestyle/offer visual (not 7 sealed retail packs)
+bottle-hero.webp = solo front bottle
+bottle-pack.webp = 2boxes black packshot
