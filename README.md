@@ -4,7 +4,33 @@ Image host untuk sales page Andromeda / DAR Legacy.
 
 ---
 
-## CDN: guna GitHub Pages, JANGAN jsDelivr
+## CDN utama: Cloudflare Pages (sejak 18 Sept 2026)
+
+**URL rasmi:**
+
+```
+https://andromeda-assets.pages.dev/<folder>/<fail>.webp
+```
+
+Contoh: `https://andromeda-assets.pages.dev/himcoffee/sp-0918/hero-produk.webp`
+
+Deploy dari root folder ni:
+
+```
+npx wrangler login
+npx wrangler pages deploy . --project-name andromeda-assets --branch main --commit-dirty=true
+```
+
+- Deploy ganti SELURUH site. Kira fail dulu, jumlah mesti sama atau lebih dari deploy lepas.
+- Lepas deploy, check URL dengan `curl -I`, kemudian `git add <folder produk>`, commit, push supaya GitHub sama dengan Cloudflare.
+- Fail JS untuk SP versi WordPress pun duduk sini (contoh `himcoffee/sp-0918/js/`). WordPress rosakkan `&&` dalam kod JS yang di-paste dalam page, jadi JS besar kena jadi fail luar.
+- Detail akaun: `DAR Legacy/Work/_Ops/Cloudflare CDN/CREDENTIALS-cloudflare-cdn.md`.
+
+GitHub Pages di bawah kekal sebagai simpanan untuk SP lama. SP baru guna Cloudflare.
+
+---
+
+## CDN lama: GitHub Pages, JANGAN jsDelivr
 
 **URL rasmi:**
 
